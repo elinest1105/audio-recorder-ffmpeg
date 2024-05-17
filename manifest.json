@@ -3,10 +3,19 @@
   "version": "1.0",
   "manifest_version": 2,
   "background": {
-    "scripts": ["background.js", "worker.js"],
+    "scripts": [
+      "background.js",
+      "worker.js"
+    ],
     "persistent": true
   },
-  "permissions": ["activeTab", "tabs", "tabCapture", "downloads", "storage"],
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "tabCapture",
+    "downloads",
+    "storage"
+  ],
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": "icon_128.png"
@@ -20,8 +29,8 @@
     },
     "start_record": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Q",
-        "mac": "Command+Shift+Q"
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
       },
       "description": "Start Record"
     },
